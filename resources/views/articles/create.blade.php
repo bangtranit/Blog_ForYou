@@ -14,10 +14,8 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3" >
-				@include ('partials.create_form')
-		    </div>
-			<!-- <form action=" {{route('article.store')}}" method="POST" class="form-horizontal">
+			
+			<form action=" {{route('article.store')}}" method="POST" class="form-horizontal">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			<div class="col-sm-6 col-sm-offset-3">
 				<div class="form-group">
@@ -33,7 +31,7 @@
 				<div class="form-group">
 					<button class="btn btn-primary">Thêm bài viết</button>
 				</div>
-			</div> -->
+			</div>
 		</div>
 			
 	</div>

@@ -13,8 +13,8 @@
 
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-			@include ('forms.login_form')
-<!-- 				<form action=" {{ route('author.checkLogin') }}" method="POST" class="form-horizonal">
+			<!-- @include ('forms.login_form') -->
+				<form action=" {{ route('author.checkLogin') }}" method="POST" class="form-horizonal">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 				<div class="form-group">
@@ -29,7 +29,7 @@
 
 				<div class="form-group">
 					<button class="btn btn-primary">Đăng nhập</button>
-				</div> -->
+				</div>
 			</div>
 		</div>
 

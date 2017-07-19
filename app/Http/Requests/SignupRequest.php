@@ -25,8 +25,8 @@ class SignupRequest extends Request
     {
         return [
             'email' => 'required|min:10|email',
-            'username' => 'required|min:10|alpha',
-            'password' => 'required|min:5'
+            'name' => 'required|min:10',
+            'password' => 'required|min:5|alpha'
         ];
     }
 }

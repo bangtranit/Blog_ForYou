@@ -11,8 +11,8 @@
 
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
-			@include ('forms.signup_form')
-<!-- 				<form action=" {{ route('author.checkSignup') }}" method="POST" class="form-horizonal">
+			<!-- @include ('forms.signup_form') -->
+				<form action=" {{ route('author.checkSignup') }}" method="POST" class="form-horizonal">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 				<div class="form-group">
@@ -32,12 +32,10 @@
 
 				<div class="form-group">
 					<button class="btn btn-primary">Đăng ký</button>
-				</div> -->
+				</div>
 
 			</div>
 		</div>
-
-
 
 	</div>
 	@stop	
