@@ -43,7 +43,17 @@ get('articles',[
 	'uses' => 'ArticlesController@index'
 	]);
 
-get('/articles/{id}',[
+get ('article/{id}/edit',[
+	'as'  => 'article.edit',
+	'uses'=> 'ArticlesController@edit'
+	]);
+
+put ('article/{id}',[
+	'as'  => 'article.update',
+	'uses'=> 'ArticlesController@update'
+	]);
+
+get('articles/{id}',[
 	'as'  => 'article.show',
 	'uses'=> 'ArticlesController@show'
 	]);
@@ -57,3 +67,11 @@ post('articles',[
 	'as'  => 'article.store',
 	'uses'=> 'ArticlesController@store'
 	]);
+
+delete('articles/{id}',[
+	'as'  => 'article.delete',
+	'uses'=> 'ArticlesController@delete'
+	]);
+
+
+

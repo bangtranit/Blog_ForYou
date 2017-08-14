@@ -12,7 +12,7 @@
 
 	<div class="form-group">
 		{!! Form::label('password', 'Mật khẩu', [ 'class' => 'control-label']) !!}
-		{!! Form::text('password', '', [ 'type' => 'password', 'class' => 'form-control', 'placeholder' => 'Hãy nhập mật khẩu', 'reuired' => 'true' ]) !!}
+		{!! Form::password('password', array('placeholder'=>'Password', 'class'=>'form-control', 'placeholder' => 'Hãy nhập mật khẩu', 'required' => 'true') ) !!}
 	</div>
 
 	<div class="form-group">

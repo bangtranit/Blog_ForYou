@@ -8,12 +8,20 @@
 			</div>
 		</div>
 		<br>
-
- 		@include ('errors.author_error')
-
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-			<!-- @include ('forms.login_form') -->
+ 				@include ('errors.author_error')
+ 			</div>
+ 		</div>
+
+ 		<div class="row">
+	 		<div class="col-sm-6 col-sm-offset-3">
+	 			@include ('forms.login_form')
+	 		</div>
+ 		</div>
+
+<!-- 		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
 				<form action=" {{ route('author.checkLogin') }}" method="POST" class="form-horizonal">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -31,7 +39,7 @@
 					<button class="btn btn-primary">Đăng nhập</button>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 
 

@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\SignupRequest;
 use App\User;
 use Input;
+use Hash;
 
 
 class SignupController extends Controller
@@ -18,12 +19,9 @@ class SignupController extends Controller
     }
 
     public function checkSignup(SignupRequest $request){
-        $email = (Input::get('email'));
-        $name = (Input::get('name'));
-        $password = md5(Input::get('password'));
-    	// $email = $request->input('email');
-    	// $name = $request->input('name');
-    	// $password = md5($request->input('password'));
+    	$email = $request->input('email');
+    	$name = $request->input('name');
+    	$password = Hash::make($request->input('password'));
     	// dd($password);
     	User::create([
     		'email' => $email,

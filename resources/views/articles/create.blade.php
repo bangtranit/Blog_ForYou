@@ -14,7 +14,12 @@
 		</div>
 		
 		<div class="row">
-			
+			<div class="col-sm-6 col-sm-offset-3">
+				@include ('forms.create_article_form')
+			</div>
+		</div>
+
+<!-- 		<div class="row">
 			<form action=" {{route('article.store')}}" method="POST" class="form-horizontal">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			<div class="col-sm-6 col-sm-offset-3">
@@ -33,7 +38,7 @@
 				</div>
 			</div>
 		</div>
-			
+ -->			
 	</div>
 @stop
 

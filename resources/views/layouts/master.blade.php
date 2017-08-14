@@ -14,4 +14,5 @@
 	@yield('body.content')
 
 	@include ('partials.footer')
+	<script src="{{asset('js/jquery.min.js')}}"></script>
 </body>

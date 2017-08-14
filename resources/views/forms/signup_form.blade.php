@@ -11,13 +11,14 @@
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('username', 'Họ tên', [ 'class' => 'control-label']) !!}
-		{!! Form::text('username', '', [ 'class' => 'form-control', 'placeholder' => 'Hãy nhập họ tên', 'reuired' => 'true' ]) !!}
+		{!! Form::label('name', 'Họ tên', [ 'class' => 'control-label']) !!}
+		{!! Form::text('name', '', [ 'class' => 'form-control', 'placeholder' => 'Hãy nhập họ tên', 'reuired' => 'true' ]) !!}
 	</div>
 
 		<div class="form-group">
 		{!! Form::label('password', 'Mật khẩu', [ 'class' => 'control-label']) !!}
-		{!! Form::text('password', '', [ 'type' => 'password', 'class' => 'form-control', 'placeholder' => 'Hãy nhập mật khẩu', 'reuired' => 'true' ]) !!}
+		{!! Form::password('password', [ 'class'=>'form-control', 'placeholder' => 'Hãy nhập mật khẩu', 'required' => 'true' ]) !!}
+		<!-- {!! Form::text('password', '', [ 'type' => 'password', 'class' => 'form-control', 'placeholder' => 'Hãy nhập mật khẩu', 'reuired' => 'true' ]) !!} -->
 	</div>
 
 	<div class="form-group">
